@@ -1,0 +1,78 @@
+        -:    0:Source:main.c
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:7
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <stdlib.h>
+        -:    3:#include <string.h>
+        -:    4:
+        -:    5:/*!
+        -:    6:    Главная функция. Ищет наибольшее положительное число, следующее за отрицательным
+        -:    7:    \param[in] f Указатель на входной поток
+        -:    8:    \param[in] ans Указатель на ответ
+        -:    9:*/
+        7:   10:int process(FILE *f, float *ans){
+        -:   11:    float inp;
+        7:   12:    int lastPlus = 1; //Last number was positive
+        7:   13:    int wasOne = 0; //At least one input is nice
+        7:   14:    int emptyFile = 1; //File is empty
+       52:   15:    while ((fscanf(f, "%f", &inp) == 1)){
+       38:   16:        emptyFile = 0;
+       38:   17:        if (inp < 0)
+        -:   18:        {
+       14:   19:            lastPlus = 0;
+        -:   20:        }
+       38:   21:        if (inp > 0)
+        -:   22:        {
+       23:   23:            if (!lastPlus)
+        -:   24:            {
+        8:   25:                if (!wasOne)
+        -:   26:                {
+        2:   27:                    *ans = inp;
+        2:   28:                    wasOne = 1;
+        -:   29:                }
+        -:   30:                else
+        -:   31:                {
+        6:   32:                    if (inp > *ans)
+        3:   33:                        *ans = inp;
+        -:   34:                }
+        -:   35:            }
+       23:   36:            lastPlus = 1;
+        -:   37:
+        -:   38:        }
+       38:   39:        if (inp == 0)
+        1:   40:            lastPlus = 1;
+        -:   41:    }
+        7:   42:    if (emptyFile)
+        2:   43:    	return -2; //file is empty
+        5:   44:    if (wasOne)
+        2:   45:        return 0; // nice job
+        -:   46:    else
+        3:   47:        return -1; // bad data
+        -:   48:}
+        -:   49:
+        -:   50:
+        -:   51:/*!
+        -:   52:    Используется для вызова функции process и обработки ошибок
+        -:   53:*/
+        7:   54:int main(void)
+        -:   55:{
+        -:   56:    float ans; ///< Переменная, содержащая ответ
+        -:   57:    float error; ///< Код ошибки, возвращаемый из функции process
+        -:   58:
+        7:   59:    error = process(stdin,&ans);
+        7:   60:    if (error == -1)
+        -:   61:    {
+        3:   62:        printf("\nNo answer for this input\n");
+        -:   63:    }
+        7:   64:    if (error == 0)
+        -:   65:    {
+        2:   66:        printf("\nAnswer is %f\n",ans);
+        -:   67:    }
+        7:   68:    if (error == -2)
+        -:   69:    {
+        2:   70:        printf("\nFile is empty or not correct\n");
+        -:   71:    }
+        7:   72:    return error;
+        -:   73:}

@@ -1,0 +1,49 @@
+        -:    0:Source:main.c
+        -:    0:Graph:main.gcno
+        -:    0:Data:main.gcda
+        -:    0:Runs:13
+        -:    0:Programs:1
+        -:    1:#include <stdio.h>
+        -:    2:#include <stdlib.h>
+        -:    3:#include <string.h>
+        -:    4:
+        -:    5:
+        -:    6:float matWait(FILE *f, int count);
+        -:    7:float dispersion(FILE *f, int count);
+        -:    8:int analyzeFile(FILE *f);
+        -:    9:/*!
+        -:   10:    Главная функция. Служит для исследования входного файла, обработки ошибок и вызова других функций
+        -:   11:    \param[in] argc Количество аргументов командной строки
+        -:   12:    \param[in] argv Аргументы командной строки. Первый аргумент - имя входного файла.
+        -:   13:*/
+       13:   14:int main(int argc, char** argv)
+        -:   15:{
+        -:   16:    FILE *f;
+       13:   17:    int count = 0;
+       13:   18:    if (argc == 2)
+        -:   19:    {
+        9:   20:        f = fopen(argv[1], "r");
+        9:   21:        if (f == NULL)
+        -:   22:        {
+        1:   23:            printf("\nI/O error\n");
+        1:   24:            return -1;
+        -:   25:        }
+        8:   26:        count = analyzeFile(f);
+        8:   27:        if (count != 0)
+        -:   28:        {
+        4:   29:            printf("Dispersion: %f\n",dispersion(f,count));
+        4:   30:            printf("MatWait:    %f\n",matWait(f,count));
+        -:   31:        }
+        -:   32:        else
+        -:   33:        {
+        4:   34:            printf("\nBad file, check it\n");
+        -:   35:        }
+        8:   36:        fclose(f);
+        -:   37:    }
+        -:   38:    else
+        -:   39:    {
+        4:   40:       printf("\nThere must be 1 argument - the name of the input file\n");
+        4:   41:       return -1;
+        -:   42:    }
+        8:   43:    return 0;
+        -:   44:}
