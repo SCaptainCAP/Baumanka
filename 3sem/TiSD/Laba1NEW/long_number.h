@@ -20,6 +20,14 @@
 #define ERROR_EXPONENT_OVERFLOW         2
 #define ERROR_INVALID_FORMAT            3
 #define ERROR_MANTIS_OVERFLOW           4
+#define ERROR_INVALID_FORMAT_INTEGER    5
+
+#define SUB_SECOND_LESS                 11
+#define SUB_EQUALS                      12
+
+#define DIVISION_TO_ZERO                21
+#define DIVISION_EXPONENT_OVERFLOW      23
+
 
 typedef struct ln
 {
@@ -39,6 +47,9 @@ static inline char itochr(int i){
 int read_ln(ln* destination, int mode);
 int multiply(ln* n, int m);
 int print_long_number(const ln* number);
-int sub_positive(ln* n, ln* m);
+int division(ln *n, ln* m, ln* answer);
 
+
+
+int sub_positive(ln* n, ln* m);
 #endif
