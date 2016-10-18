@@ -25,8 +25,8 @@
 #define SUB_SECOND_LESS                 11
 #define SUB_EQUALS                      12
 
-#define DIVISION_TO_ZERO                21
-#define DIVISION_EXPONENT_OVERFLOW      23
+#define ERROR_DIVISION_TO_ZERO                21
+#define ERROR_DIVISION_EXPONENT_OVERFLOW      23
 
 
 typedef struct ln

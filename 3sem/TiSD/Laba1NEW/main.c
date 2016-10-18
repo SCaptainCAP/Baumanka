@@ -20,10 +20,10 @@ static void handle_error(int error_status)
     case ERROR_MANTIS_OVERFLOW:
         printf("There is mantis overflow. Please enter valid number\n");
         break;
-    case DIVISION_EXPONENT_OVERFLOW:
+    case ERROR_DIVISION_EXPONENT_OVERFLOW:
         printf("Cannot divide. There is exponent overflow\n");
         break;
-    case DIVISION_TO_ZERO:
+    case ERROR_DIVISION_TO_ZERO:
         printf("Cannot divide to zero\n");
         break;
     default:
@@ -38,11 +38,23 @@ static void handle_error(int error_status)
 int main()
 {
     ln first, second, ans;
+    printf("FORMAT:\n");
+    printf("REAL: [+/-]m.n[ E [+/-]k], where m.n is mantis and k - exponent\n");
+    printf("INT : [+/-]m[ E [+/-]k], where m is mantis and k - exponent\n");
+    printf("PLEASE INPUT ZERO AS 0\n");
 
     printf("Please enter real number (divident):\n");
 
+    printf("1    6    11   16   21   26 30\n");
+    printf("|    |    |    |    |    |   |\n");
+
     handle_error(read_ln(&first, INPUT_REAL));
-    printf("Please enter integer number (divider):\n");
+
+    printf("\nPlease enter integer number (divider):\n\n");
+
+    printf("1    6    11   16   21   26 30\n");
+    printf("|    |    |    |    |    |   |\n");
+
     handle_error(read_ln(&second, INPUT_INTEGER));
 
     handle_error(division(&first, &second, &ans));

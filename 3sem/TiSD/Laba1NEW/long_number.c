@@ -447,10 +447,12 @@ int division(ln *n, ln* m, ln* answer)
 
 
     if (m->mantis[0] == '0')
-        return DIVISION_TO_ZERO;
+        return ERROR_DIVISION_TO_ZERO;
     if (n->mantis[0] == '0')
+    {
+        answer->mantis[0] = '0';
         return ERROR_OK;
-
+    }
     if (n->mantis_sign == m->mantis_sign)
         answer->mantis_sign = POSITIVE;
     else
@@ -467,7 +469,7 @@ int division(ln *n, ln* m, ln* answer)
     m->exponent = 0;
 
     if (answer->exponent > MAX_EXP || answer->exponent < MIN_EXP)
-        return DIVISION_EXPONENT_OVERFLOW;
+        return ERROR_DIVISION_EXPONENT_OVERFLOW;
 
     if (equals(n,m))
     {
@@ -479,7 +481,7 @@ int division(ln *n, ln* m, ln* answer)
         answer->exponent -= 1;
 
     if (answer->exponent > MAX_EXP || answer->exponent < MIN_EXP)
-        return DIVISION_EXPONENT_OVERFLOW;
+        return ERROR_DIVISION_EXPONENT_OVERFLOW;
 
     m->exponent = strlen(m->mantis);
     n->exponent = strlen(n->mantis);
@@ -487,7 +489,7 @@ int division(ln *n, ln* m, ln* answer)
     {
         n->exponent++;
     }
-    while ((answer->mantis[MANTIS_LENGTH - 1] == '\0') && (n->mantis[0] != '0'))
+    while ((strlen(answer->mantis) != MANTIS_LENGTH) && (n->mantis[0] != '0'))
     {
         if (is_bigger_than(m, n))
         {
@@ -501,14 +503,14 @@ int division(ln *n, ln* m, ln* answer)
                 answer->mantis[ans_man_len] = itochr(0);
                 ans_man_len++;
             }
-            else
-            {
-                answer->exponent++;
-                if (answer->exponent > MAX_EXP)
-                    return DIVISION_EXPONENT_OVERFLOW;
-            }
+//            else
+//            {
+//                answer->exponent++;
+//                if (answer->exponent > MAX_EXP)
+//                    return ERROR_DIVISION_EXPONENT_OVERFLOW;
+//            }
         }
-        while (is_bigger_than(n, m)) { // one division loop
+        while (is_bigger_than(n, m) || equals(n, m)) { // one division loop
             clone(m, &tmp_m);
             while(is_bigger_than(n, &tmp_m))
             {
@@ -518,7 +520,7 @@ int division(ln *n, ln* m, ln* answer)
             num = 1;
             clone(&tmp_m, &tmp);
             multiply(&tmp, num);
-            while (is_bigger_than(n, &tmp) || equals(n, &tmp))
+            while ((is_bigger_than(n, &tmp) || equals(n, &tmp)) && num <= 9)
             {
                 num++;
                 clone(&tmp_m, &tmp);
@@ -539,12 +541,12 @@ int division(ln *n, ln* m, ln* answer)
                 answer->mantis[ans_man_len] = itochr(num);
                 ans_man_len++;
             }
-            else
-            {
-                answer->exponent++;
-                if (answer->exponent > MAX_EXP)
-                    return DIVISION_EXPONENT_OVERFLOW;
-            }
+//            else
+//            {
+//                answer->exponent++;
+//                if (answer->exponent > MAX_EXP)
+//                    return ERROR_DIVISION_EXPONENT_OVERFLOW;
+//            }
 
             //if (is_bigger_than(n, m))
             {
@@ -556,19 +558,19 @@ int division(ln *n, ln* m, ln* answer)
                         answer->mantis[ans_man_len] = itochr(0);
                         ans_man_len++;
                     }
-                    else
-                    {
-                        answer->exponent++;
-                        if (answer->exponent > MAX_EXP)
-                            return DIVISION_EXPONENT_OVERFLOW;
-                    }
+//                    else
+//                    {
+//                        answer->exponent++;
+//                        if (answer->exponent > MAX_EXP)
+//                            return ERROR_DIVISION_EXPONENT_OVERFLOW;
+//                    }
                     symbol_count++;
                 }
             }
         }
         remove_back_zeros_inc_exp(n);
     }
-    remove_back_zeros_inc_exp(answer);
+    remove_back_zeros(answer);
     if (strlen(answer->mantis) == MANTIS_LENGTH)
     {
         for (int i = MANTIS_LENGTH + 1; i >= 1; i--)
@@ -594,12 +596,12 @@ int division(ln *n, ln* m, ln* answer)
             answer->exponent++;
 
             if (answer->exponent > MAX_EXP)
-                return DIVISION_EXPONENT_OVERFLOW;
+                return ERROR_DIVISION_EXPONENT_OVERFLOW;
         }
     }
     remove_back_zeros(answer);
     if (answer->exponent > MAX_EXP)
-        return DIVISION_EXPONENT_OVERFLOW;
+        return ERROR_DIVISION_EXPONENT_OVERFLOW;
     return ERROR_OK;
 }
 
