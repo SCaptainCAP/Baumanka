@@ -9,12 +9,12 @@
 int sdelat_labu(FILE *in_file, int *answer);
 
 /*!
-    \brief Returns what we need to do in tasl
+    \brief Returns what we need to do in task
     \param f Input file
     \param finish Pointer to the LAST element of array.
     \param start Pointer to the beginning of array
 */
-int calculate(int *start, int *finish);
+int calculate(const int *start, const int *finish);
 
 /*!
     \brief Returns amount of integer numbers

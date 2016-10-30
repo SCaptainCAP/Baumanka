@@ -34,14 +34,14 @@ int sdelat_labu(FILE *in_file, int *answer)
 }
 
 
-int calculate(int *start, int *finish)
+int calculate(const int *start, const int *finish)
 {
     int ans = 0;
     int now = 1;
-    int *pointer = start;
+    const int *pointer = start;
+    assert(pointer != NULL);
     while (pointer != finish)
     {
-        assert(pointer != NULL);
         now *= *pointer;
         pointer++;
         ans += now;
@@ -83,10 +83,10 @@ int find_first_negative_index(int *start, int *finish)
 int fill_array(FILE *file, int *array, int count)
 {
     int *pointer = array;
+    if (!pointer)
+        return ERROR_UNDEFINED;
     for (int i = 0; i < count; i++)
     {
-        if (!pointer)
-            return ERROR_UNDEFINED;
         fscanf(file, "%d", pointer);
         pointer++;
     }

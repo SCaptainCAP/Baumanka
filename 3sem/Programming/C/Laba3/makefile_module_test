@@ -1,12 +1,13 @@
-CC := mingw32-gcc
-CFLAGS := -std=c99 -Wall -Werror -pedantic
+CC := gcc
+CFLAGS := -std=c99 -Wall -Werror -pedantic -g3
 OBJS := realization.o
 
-test.exe : $(OBJS) test.o
-	$(CC) $(CFLAGS) $^ -o test.exe
+test : $(OBJS) test.o
+	$(CC) $(CFLAGS) $^ -o test
 
 %.o : %.c *.h
 	$(CC) $(CFLAGS) -c $<
 
 clean :
-	rm -f $(OBJS) main.exe
+	rm -f $(OBJS) main test
+	rm -f *.gcda *.gcno *.gcov

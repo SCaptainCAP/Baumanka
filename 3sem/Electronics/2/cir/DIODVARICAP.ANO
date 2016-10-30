@@ -1,0 +1,169 @@
+********************************************************************************
+***                            Micro-Cap 9.0.5.0                             ***
+***                                                                          ***
+***                                                                          ***
+***                        AC Analysis of DIODVARICAP                        ***
+***                                                                          ***
+********************************************************************************
+Limits
+======
+Frequency Range  6E5,4.5e5
+Number of Points 9000
+Temperature      Linear 27
+Maximum Change % 5
+Noise Input      NONE
+Noise Output     2
+Run Options      Normal
+State Variables  Zero
+Frequency Step   Linear
+Operating Point  On
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:        1N748   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                 3.900    
+CJO              228.005p   
+EG                 1.110 (*)
+FC               500.000m(*)
+IBV               20.000m   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                 5.724f   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                494.189m   
+N                  1.000 (*)
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 1.000G   
+RS                23.000    
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 0.000 (*)
+VJ               749.985m   
+XTI                3.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000   5            -5.000   ESM          -5.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current  Inductor     Current 
+L1        1.555E-050  L2           66.475m 
+
+
+Operating point for devices of type Diode
+=========================================
+Instance:                 D1
+Using model:           1N748
+ID                  -66.481m
+VD                   -5.000 
+REQ                 389.047m
+CAP                  97.078p
+
+DC Power Terms:
+PD                  332.413m
+PS                    0.000 
+
+DC Pin Currents:
+Id                  -66.481m
+
+Condition:
+State                  ZENER
+
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1              L2
+DC Power Terms:
+PS                     0.000           0.000 
+
+DC Pin Currents:
+Il                 1.555E-050         66.475m
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1              C2
+DC Power Terms:
+PS                     0.000           0.000 
+
+DC Pin Currents:
+Ic                     0.000           0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+Operating point for devices of type SPICE Source
+================================================
+Instance:               VVAR
+DC Power Terms:
+PG                  332.377m
+
+DC Pin Currents:
+ISource             -66.475m
+
+

@@ -5,6 +5,8 @@
 #define ERROR_OK 0
 #define ERROR_BAD_ARGUMENT_COUNT 1
 #define ERROR_IN_FILE 2
+#define ERROR_OUT_FILE 3
+
 #define ERROR_MALLOC 101
 #define ERROR_NO_DATA_IN_FILE 102
 

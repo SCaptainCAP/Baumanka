@@ -2,55 +2,61 @@
 #include "error_codes_and_defines.h"
 #include "realization.h"
 
-void show_error_message(int error);
+void handle(int error_status);
 int main(int argc, char *argv[])
 {
-    int errorcode = ERROR_OK;
-    if (argc != 3)
+    if (argc != 4)
     {
-        errorcode = ERROR_BAD_ARGUMENT_COUNT;
+        handle(ERROR_BAD_ARGUMENT_COUNT);
     }
-    else
+
+    FILE * in_file = fopen(argv[1], "r");
+    if (in_file == 0)
+        handle(ERROR_IN_FILE);
+
+    FILE * out_file_chetn = fopen(argv[2], "w");
+    if (out_file_chetn == 0)
     {
-        //open in file
-        FILE * in_file = fopen(argv[1], "r");
-        if (in_file == 0)
-        {
-            errorcode = ERROR_IN_FILE;
-        }
-        else
-        {
-            //open out file
-            FILE * out_file = fopen(argv[2], "w");
-            if (out_file == 0)
-            {
-                errorcode = ERROR_OUT_FILE;
-            }
-            else
-            {
-                errorcode = sdelat_labu(in_file, out_file);
-                fclose(out_file);
-            }
-            fclose(in_file);
-        }
+        fclose(in_file);
+        handle(ERROR_OUT_FILE);
     }
-    show_error_message(errorcode);
-    return errorcode;
+
+    FILE * out_file_nechetn = fopen(argv[3], "w");
+    if (out_file_nechetn == 0)
+    {
+        fclose(in_file);
+        fclose(out_file_chetn);
+        handle(ERROR_OUT_FILE);
+    }
+
+    int errorcode = sdelat_labu(in_file, out_file_chetn, out_file_nechetn);
+
+    fclose(in_file);
+    fclose(out_file_chetn);
+    fclose(out_file_nechetn);
+
+    handle(errorcode);
+
+    printf("Please check out files\n");
+    return 0;
 }
-void show_error_message(int error)
+void handle(int error_status)
 {
-    if (error == ERROR_BAD_ARGUMENT_COUNT)
-        printf("Bad argument count\n");
-    if (error == ERROR_IN_FILE)
-        printf("In file error\n");
-    if (error == ERROR_OUT_FILE)
-        printf("Out file error\n");
-    if (error == ERROR_NO_MORE_AVER)
-        printf("No answer, check input file\n");
-    if (error == ERROR_OK)
-        printf("Check out file\n");
-    if (error == ERROR_IN_TOO_LARGE)
-        printf("Too many data in input file\n");
-    if (error == ERROR_NO_DATA_IN_FILE)
-        printf("No data in input file\n");
+    switch (error_status) {
+        case ERROR_OK:
+            return;
+        case ERROR_BAD_ARGUMENT_COUNT:
+            printf("Bad argument count\n");
+            break;
+        case ERROR_IN_FILE:
+            printf("In file error\n");
+            break;
+        case ERROR_OUT_FILE:
+            printf("Out file error\n");
+            break;
+        default:
+            printf("Unknown error\n");
+            break;
+        }
+    exit(EXIT_FAILURE);
 }

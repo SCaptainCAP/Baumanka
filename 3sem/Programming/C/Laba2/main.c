@@ -2,6 +2,10 @@
 #include "error_codes_and_defines.h"
 #include "realization.h"
 
+//Вычислить значение x[0] + x[0]*x[1] + x[0]*x[1]*x[2] + ... + x[0]*x[1]*x[2] ... x[m],
+//где x[i] - элементы массива x из n элементов, m - индекс первого отрицательного элемента
+//этого массива либо число n-1, если такого элемента в массиве нет.
+
 void show_error_message(int error, int answer);
 int main(int argc, char *argv[])
 {

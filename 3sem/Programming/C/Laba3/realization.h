@@ -7,6 +7,6 @@
 #include <assert.h>
 #include "list.h"
 
-int sdelat_labu(FILE *in_file, int *answer);
+int sdelat_labu(FILE *in_file, FILE *out_file_chetn, FILE *out_file_nechetn);
 
 #endif

@@ -14,7 +14,7 @@ int test_calculate()
 
     int index1 = 2;
 
-    if (calculate(array1,index1) != 3)
+    if (calculate(array1,array1 + index1) != 3)
         error += 1;
 
     free (array1);
@@ -29,7 +29,7 @@ int test_calculate()
 
     int index2 = 3;
 
-    if (calculate(array2,index2) != 9)
+    if (calculate(array2, array2 + index2) != 9)
         error += 1;
 
     free (array2);
@@ -44,7 +44,7 @@ int test_calculate()
 
 int test_find_first_negative_index()
 {
-    printf("Testing calculate...\n");
+    printf("Testing find_first_negative_index...\n");
     int error = 0;
 
     int *array1 = malloc(sizeof(int) * 4);
@@ -84,8 +84,73 @@ int test_find_first_negative_index()
     return error;
 }
 
+int test_get_file_items_count()
+{
+    int error = 0;
+    FILE *file;
+
+    printf("Testing get_file_items_count...\n");
+
+    file = fopen("tests/module_count1.txt", "r");
+    if (file == NULL)
+        error++;
+    else
+    {
+        if (get_file_items_count(file) != 1)
+            error++;
+        fclose(file);
+    }
+
+    file = fopen("tests/module_count2.txt", "r");
+    if (file == NULL)
+        error++;
+    else
+    {
+        if (get_file_items_count(file) != 2)
+            error++;
+        fclose(file);
+    }
+
+    file = fopen("tests/module_count3.txt", "r");
+    if (file == NULL)
+        error++;
+    else
+    {
+        if (get_file_items_count(file) != 3)
+            error++;
+        fclose(file);
+    }
+
+    file = fopen("tests/module_count4.txt", "r");
+    if (file == NULL)
+        error++;
+    else
+    {
+        if (get_file_items_count(file) != 3)
+            error++;
+        fclose(file);
+    }
+
+    file = fopen("tests/empty.txt", "r");
+    if (file == NULL)
+        error++;
+    else
+    {
+        if (get_file_items_count(file) != 0)
+            error++;
+        fclose(file);
+    }
+
+    if (error == 0)
+        printf("Done!\n\n");
+    else
+        printf("There are %d errors\n",error);
+    return error;
+}
+
 int main()
 {
     test_calculate();
     test_find_first_negative_index();
+    test_get_file_items_count();
 }

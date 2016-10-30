@@ -1,0 +1,1771 @@
+********************************************************************************
+***                            Micro-Cap 9.0.6.1                             ***
+***                                Microsoft                                 ***
+***                                Microsoft                                 ***
+***                          AC Analysis of KONTUR1                          ***
+***                                                                          ***
+********************************************************************************
+Limits
+======
+Frequency Range  8E5,3.5e5
+Number of Points 9000
+Temperature      Linear 27
+Maximum Change % 5
+Noise Input      NONE
+Noise Output     2
+Run Options      Normal
+State Variables  Zero
+Frequency Step   Linear
+Operating Point  On
+
+Stepping Options
+================
+Stepping is Nested
+
+Step What  R4 Value
+From       500
+To         10000
+Step Value 500
+Method     Linear
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=500                     ***
+*****************************************************
+
+Temperature=27 R4=500
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=1K                     ***
+*****************************************************
+
+Temperature=27 R4=1K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=1.5K                    ***
+*****************************************************
+
+Temperature=27 R4=1.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=2K                     ***
+*****************************************************
+
+Temperature=27 R4=2K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=2.5K                    ***
+*****************************************************
+
+Temperature=27 R4=2.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=3K                     ***
+*****************************************************
+
+Temperature=27 R4=3K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=3.5K                    ***
+*****************************************************
+
+Temperature=27 R4=3.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=4K                     ***
+*****************************************************
+
+Temperature=27 R4=4K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=4.5K                    ***
+*****************************************************
+
+Temperature=27 R4=4.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=5K                     ***
+*****************************************************
+
+Temperature=27 R4=5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=5.5K                    ***
+*****************************************************
+
+Temperature=27 R4=5.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=6K                     ***
+*****************************************************
+
+Temperature=27 R4=6K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=6.5K                    ***
+*****************************************************
+
+Temperature=27 R4=6.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=7K                     ***
+*****************************************************
+
+Temperature=27 R4=7K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=7.5K                    ***
+*****************************************************
+
+Temperature=27 R4=7.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=8K                     ***
+*****************************************************
+
+Temperature=27 R4=8K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=8.5K                    ***
+*****************************************************
+
+Temperature=27 R4=8.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                     R4=9K                     ***
+*****************************************************
+
+Temperature=27 R4=9K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=9.5K                    ***
+*****************************************************
+
+Temperature=27 R4=9.5K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    R4=10K                     ***
+*****************************************************
+
+Temperature=27 R4=10K
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:         1MHZ   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                503.641K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+IN            0.000   2             0.000   OUT           0.000  
+4             0.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1            0.000  
+
+
+Operating point for devices of type Resistor
+============================================
+Instance:               RS_V1              R1              R2              R3
+DC Power Terms:
+PD                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  R4
+DC Power Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+
+
+Operating point for devices of type Inductor
+============================================
+Instance:                  L1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                     0.000 
+
+
+
+Operating point for devices of type Capacitor
+=============================================
+Instance:                  C1
+DC Power Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+
+
+Operating point for devices of type Sine Source
+===============================================
+Instance:                  V1
+Using model:             1MHZ
+DC Power Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
