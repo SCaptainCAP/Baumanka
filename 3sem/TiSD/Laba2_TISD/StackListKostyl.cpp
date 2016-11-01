@@ -1,50 +1,55 @@
 #include <iostream>
 #include <assert.h>
+#include <vector>
 
 template <typename T>
 struct Node
 {
     T Data;
     Node* Next;
+
 };
 
 template <class T>
-class StackList {
+class StackListKostyl {
 public:
-    StackList();
-    ~StackList();
+    StackListKostyl();
+    ~StackListKostyl();
 
-    void Push(T data);
-    T Pop();
+    void Push(bool arFree);
+    T Pop(bool arFree);
     T operator[] (int i);
     T get(int i);
     T* getAddr(int i);
     bool IsEmpty() const;
     int Size() const;
 
-    void print(bool debug = false) const;
+    void print() const;
+    void printFreeObl() const;
+    void printAdresses() const;
 
 protected:
     Node<T>* start;
+    std::vector<Node<T>*> freeObl;
 };
 
 
 template <typename T>
-StackList<T>::StackList() : start(0){}
+StackListKostyl<T>::StackListKostyl() : start(0){}
 
 
 template <typename T>
-StackList<T>::~StackList()
+StackListKostyl<T>::~StackListKostyl()
 {
     while (!IsEmpty() )
     {
-        Pop();
+        Pop(false);
     }
 }
 
 
 template <typename T>
-void StackList<T>::Push(T data) {
+void StackListKostyl<T>::Push(bool arFree) {
     Node<T>* newNode = new(std::nothrow) Node<T>;
     if (newNode == NULL)
     {
@@ -52,7 +57,15 @@ void StackList<T>::Push(T data) {
     }
     else
     {
-        newNode->Data = data;
+        if (arFree) {
+            for (int i = 0; i < freeObl.size(); i++) {
+                if (freeObl[i] == newNode) {
+                    freeObl.erase(freeObl.begin() + i);
+                    break;
+                }
+            }
+        }
+        newNode->Data = (int*) newNode;
         newNode->Next = start;
         start = newNode;
     }
@@ -60,25 +73,27 @@ void StackList<T>::Push(T data) {
 
 
 template <typename T>
-T StackList<T>::Pop() {
+T StackListKostyl<T>::Pop(bool arFree) {
     if (IsEmpty())
         throw std::runtime_error("ERROR: popBack from empty stack");
     T data = start->Data;
     Node<T>* node_tmp = start;
     start = start->Next;
+    if (arFree)
+        freeObl.push_back(node_tmp);
     free(node_tmp);
     return data;
 }
 
 
 template <typename T>
-bool StackList<T>::IsEmpty() const
+bool StackListKostyl<T>::IsEmpty() const
 {
     return (start == NULL);
 }
 
 template <typename T>
-int StackList<T>::Size() const
+int StackListKostyl<T>::Size() const
 {
     int ans = 0;
     Node<T>* tmp = start;
@@ -90,7 +105,7 @@ int StackList<T>::Size() const
 }
 
 template <typename T>
-T StackList<T>::operator[](int i) {
+T StackListKostyl<T>::operator[](int i) {
     Node<T>* node_tmp = start;
     int j = 0;
     while (i < j || node_tmp->Next != NULL) {
@@ -104,7 +119,7 @@ T StackList<T>::operator[](int i) {
 }
 
 template <typename T>
-T StackList<T>::get(int i) {
+T StackListKostyl<T>::get(int i) {
     Node<T>* node_tmp = start;
     int j = 0;
     while (i < j || node_tmp->Next != NULL) {
@@ -118,7 +133,7 @@ T StackList<T>::get(int i) {
 }
 
 template <typename T>
-T* StackList<T>::getAddr(int i) {
+T* StackListKostyl<T>::getAddr(int i) {
     Node<T>* node_tmp = start;
     int j = 0;
     while (i < j || node_tmp->Next != NULL) {
@@ -132,21 +147,26 @@ T* StackList<T>::getAddr(int i) {
 }
 
 template <typename T>
-void StackList<T>::print() const {
+void StackListKostyl<T>::print() const {
     Node<T>* tmp = start;
-    while (tmp->Next) {
+    while (tmp) {
         std::cout << tmp->Data << std::endl;
         tmp = tmp->Next;
     }
 }
 
 template <typename T>
-void StackList<T>::printAdresses() const {
+void StackListKostyl<T>::printFreeObl() const {
+    for (int i = 0; i < freeObl.size(); i++) {
+        std::cout << freeObl[i] << std::endl;
+    }
+}
+
+template <typename T>
+void StackListKostyl<T>::printAdresses() const {
     Node<T>* tmp = start;
-    while (tmp->Next) {
+    while (tmp) {
         std::cout << tmp << std::endl;
         tmp = tmp->Next;
     }
 }
-
-
