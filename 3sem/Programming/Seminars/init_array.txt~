@@ -1,0 +1,61 @@
+Правильно ли проинициализирована строка name?
+
+
+int main(void)
+{
+	char name[] = {'F', 'e', 's', 's', '\0'};
+	char name1[] = "Fess";
+	char name2[5] = {'F', 'e', 's', 's'};
+}
+--------------------------------------------------------------------------------
+int main(void)
+{
+	char note[] = "1234567890_abcd";
+	char *ptr = note;
+	puts(ptr);
+	puts(++ptr);
+	note[7] = '\0';
+	puts(note);
+	puts(++ptr);
+	return 0;
+}
+
+1234567890_abcd
+234567890_abcd
+1234567
+34567
+--------------------------------------------------------------------------------
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+	char food[] = "Yummy";
+	char *ptr;
+	ptr = food + strlen(food);
+	while (--ptr >= food)
+		puts(ptr);
+	return 0;
+}
+
+y
+my
+mmy
+ummy
+Yummy
+--------------------------------------------------------------------------------
+#include <stdio.h>
+char* pr(char *str)
+{
+	char *pe = str;
+	while (*pe)
+		putchar(*pe++);
+	do
+	{
+		putchar(*pe--);
+	}
+	while (pe-str);
+	return pe;
+}
+
+

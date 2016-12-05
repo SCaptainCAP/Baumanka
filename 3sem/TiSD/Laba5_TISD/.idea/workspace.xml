@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" assignedExecutableTargets="true" buildAllGenerated="true">
     <generated>
+      <config projectName="Laba5_TISD" targetName="Laba5_TISD" />
       <config projectName="Node_Queue" targetName="Node_Queue" />
       <config projectName="Laba1" targetName="Laba1" />
       <config projectName="Laba2_TISD" targetName="Laba2_TISD" />
@@ -33,82 +34,52 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="15">
+              <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="Matrix.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Matrix.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="128" column="20" selection-start-line="127" selection-start-column="22" selection-end-line="128" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackArray.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StackArray.cpp">
+      <file leaf-file-name="stl_vector.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-              <folding>
-                <element signature="e#107#116#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="9810">
+              <caret line="654" column="0" selection-start-line="654" selection-start-column="0" selection-end-line="654" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackList.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StackList.cpp">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#50#62#0" expanded="true" />
-                <element signature="e#430#442#0" expanded="true" />
-                <element signature="e#493#505#0" expanded="true" />
-                <element signature="e#599#611#0" expanded="true" />
-                <element signature="e#915#927#0" expanded="true" />
-                <element signature="e#1172#1184#0" expanded="true" />
-                <element signature="e#1449#1461#0" expanded="true" />
-                <element signature="e#1788#1800#0" expanded="true" />
-                <element signature="e#2120#2132#0" expanded="true" />
-                <element signature="e#2458#2470#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StackListKostyl.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StackListKostyl.cpp">
+      <file leaf-file-name="MatrixRare.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MatrixRare.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2505">
-              <caret line="167" column="14" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#68#80#0" expanded="true" />
-                <element signature="e#563#575#0" expanded="true" />
-                <element signature="e#638#650#0" expanded="true" />
-                <element signature="e#761#773#0" expanded="true" />
-                <element signature="e#1345#1357#0" expanded="true" />
-                <element signature="e#1672#1684#0" expanded="true" />
-                <element signature="e#1768#1780#0" expanded="true" />
-                <element signature="e#1961#1973#0" expanded="true" />
-                <element signature="e#2306#2318#0" expanded="true" />
-                <element signature="e#2644#2656#0" expanded="true" />
-                <marker date="1477984029515" expanded="false" signature="3165:3186" ph="&lt;T&gt;" />
-                <marker date="1477984029515" expanded="false" signature="3337:3358" ph="&lt;T&gt;" />
-              </folding>
+            <state relative-caret-position="2565">
+              <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -122,11 +93,14 @@
         <option value="$PROJECT_DIR$/class.h" />
         <option value="$PROJECT_DIR$/Stack.h" />
         <option value="$PROJECT_DIR$/Stack.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/StackList.cpp" />
         <option value="$PROJECT_DIR$/StackListKostyl.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/StackArray.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/MatrixRare.cpp" />
+        <option value="$PROJECT_DIR$/MatrixRare.h" />
+        <option value="$PROJECT_DIR$/Matrix.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -139,9 +113,9 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -172,17 +146,31 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Laba2_TISD" />
+              <option name="myItemId" value="Laba5_TISD" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Laba2_TISD" />
+              <option name="myItemId" value="Laba5_TISD" />
               <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Laba2_TISD" />
+              <option name="myItemId" value="Laba5_TISD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Laba5_TISD" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Laba5_TISD" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -198,6 +186,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/build" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -375,15 +367,20 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Node_Queue" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Laba2_TISD" TARGET_NAME="Laba2_TISD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Laba2_TISD" RUN_TARGET_NAME="Laba2_TISD">
+    <configuration default="false" name="Laba5_TISD" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Laba5_TISD" TARGET_NAME="Laba5_TISD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Laba5_TISD" RUN_TARGET_NAME="Laba5_TISD">
       <envs />
       <method />
     </configuration>
-    <list size="4">
+    <configuration default="false" name="Node_Queue" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Laba5_TISD" TARGET_NAME="Laba5_TISD" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Laba5_TISD" RUN_TARGET_NAME="Laba5_TISD">
+      <envs />
+      <method />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.Laba2_TISD_ARRAY" />
       <item index="2" class="java.lang.String" itemvalue="Application.Laba2_TISD" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Node_Queue" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Laba5_TISD" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Node_Queue" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -424,18 +421,27 @@
       <workItem from="1477978582249" duration="6001000" />
       <workItem from="1478003626432" duration="4381000" />
       <workItem from="1478176580382" duration="166000" />
-      <workItem from="1479217381018" duration="666000" />
+      <workItem from="1479152607459" duration="2560000" />
+      <workItem from="1479155860856" duration="3435000" />
+      <workItem from="1479159350542" duration="2526000" />
+      <workItem from="1479188056560" duration="12126000" />
+      <workItem from="1479746744771" duration="23414000" />
+      <workItem from="1479818464487" duration="5380000" />
+      <workItem from="1480063481543" duration="243000" />
+      <workItem from="1480096414404" duration="255000" />
+      <workItem from="1480398406296" duration="705000" />
+      <workItem from="1480603910060" duration="1197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95808000" />
+    <option name="totallyTimeSpent" value="146532000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1283628" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12298232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9362364" sideWeight="0.3655914" order="8" side_tool="true" content_ui="tabs" />
@@ -444,15 +450,15 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2348367" sideWeight="0.49730977" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23248883" sideWeight="0.49730977" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9362364" sideWeight="0.6344086" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.80029804" sideWeight="0.6344086" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901832" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39791358" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4023845" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -491,45 +497,15 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="39" />
+      <option name="time" value="60" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="matrixRareTMP" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Stack.cpp" />
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/5/bits/basic_string.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78135">
-          <caret line="5209" column="4" selection-start-line="5209" selection-start-column="4" selection-end-line="5209" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Stack.cpp" />
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -709,73 +685,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/StackListKostyl.cpp" />
+    <entry file="file://$PROJECT_DIR$/StackList.cpp" />
+    <entry file="file://$PROJECT_DIR$/StackArray.cpp" />
+    <entry file="file://$PROJECT_DIR$/MatrixRare.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        <state relative-caret-position="105">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/StackListKostyl.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2505">
-          <caret line="167" column="14" selection-start-line="167" selection-start-column="14" selection-end-line="167" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#68#80#0" expanded="true" />
-            <element signature="e#563#575#0" expanded="true" />
-            <element signature="e#638#650#0" expanded="true" />
-            <element signature="e#761#773#0" expanded="true" />
-            <element signature="e#1345#1357#0" expanded="true" />
-            <element signature="e#1672#1684#0" expanded="true" />
-            <element signature="e#1768#1780#0" expanded="true" />
-            <element signature="e#1961#1973#0" expanded="true" />
-            <element signature="e#2306#2318#0" expanded="true" />
-            <element signature="e#2644#2656#0" expanded="true" />
-            <marker date="1477984029515" expanded="false" signature="3165:3186" ph="&lt;T&gt;" />
-            <marker date="1477984029515" expanded="false" signature="3337:3358" ph="&lt;T&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StackList.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#50#62#0" expanded="true" />
-            <element signature="e#430#442#0" expanded="true" />
-            <element signature="e#493#505#0" expanded="true" />
-            <element signature="e#599#611#0" expanded="true" />
-            <element signature="e#915#927#0" expanded="true" />
-            <element signature="e#1172#1184#0" expanded="true" />
-            <element signature="e#1449#1461#0" expanded="true" />
-            <element signature="e#1788#1800#0" expanded="true" />
-            <element signature="e#2120#2132#0" expanded="true" />
-            <element signature="e#2458#2470#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StackArray.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding>
-            <element signature="e#107#116#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/build/MatrixRare.h" />
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="128" column="20" selection-start-line="127" selection-start-column="22" selection-end-line="128" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="87" column="28" selection-start-line="87" selection-start-column="28" selection-end-line="87" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Matrix.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9810">
+          <caret line="654" column="0" selection-start-line="654" selection-start-column="0" selection-end-line="654" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MatrixRare.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2565">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

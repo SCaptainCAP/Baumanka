@@ -106,29 +106,6 @@ struct list_node* get(struct list_node *head, int index)
     return ans;
 }
 
-struct list_node* del_by_value(struct list_node *head, int val)
-{
-    struct list_node *cur, *prev = NULL;
-
-    for (cur = head; cur; cur = cur->next)
-    {
-        if (cur->num == val)
-        {
-            if (prev)
-                prev->next = cur->next;
-            else
-                head = cur->next;
-
-            free(cur);
-
-            return  head;
-        }
-        prev = cur;
-    }
-
-    return NULL;
-}
-
 void fprint_list(struct list_node *head, FILE *f)
 {
     for ( ; head; head = head->next)
