@@ -1,0 +1,12 @@
+CC := gcc
+CFLAGSGCOV := -std=c99 -Wall -pedantic -O0 -fprofile-arcs -ftest-coverage
+OBJS := realization.o main.o
+
+main.exe : $(OBJS) main.o
+	$(CC) $(CFLAGSGCOV) $^ -o main
+
+%.o : %.c *.h
+	$(CC) $(CFLAGSGCOV) -c $<
+
+clean :
+	rm -f $(OBJS) main
