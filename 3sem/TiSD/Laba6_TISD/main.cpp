@@ -6,26 +6,62 @@
 #include <vector>
 using namespace std;
 
+void removeEqualitiesFromString(string& input) {
+    for (int i = 0; i < input.size(); i++) {
+        vector<int> positions;
+        positions.push_back(i);
+        for (int j = i + 1; j < input.size(); j++) {
+            if (input[i] == input[j]) {
+                positions.push_back(j);
+            }
+        }
+        if (positions.size() != 1) {
+            for (int j = 0; j < positions.size(); j++) {
+                for (int k = positions[j] - j; k < input.size() - 1; k++) {
+                    input[k] = input[k + 1];
+                }
+            }
+            input = input.substr(0, input.size() - positions.size());
+            i--;
+        }
+    }
+}
+
 
 int main() {
     BinaryTree<char> tree;
-    tree.addNode('a');
-    tree.addNode('b');
-    tree.addNode('c');
-    tree.addNode('d');
-    tree.addNode('e');
-    tree.addNode('f');
-    tree.visualize();
-    /*string input = "";
+    string input = "";
     vector<int> a;
     a.push_back(0);
     cout << "Введите строку\n";
-    cin >> input;
-    if (input == "") {
-        cin.ignore(255);
-        cin.clear();
-        cout << "Строка не должна быть пустой\n";
-    }*/
+    while (input == "") {
+        getline(cin, input);
+        if (input == "")
+            cout << "Строка не должна быть пустой\n";
+    }
+    for (int i = 0; i  < input.size(); i++) {
+        tree.addNode(input[i]);
+    }
+    tree.visualizeColorRepeating();
+    auto start = std::chrono::high_resolution_clock::now();
+    tree.removeDublicates();
+    auto finish = std::chrono::high_resolution_clock::now();
+
+    vector<char> v = tree.LRCVector();
+    std::cout << "\nОставшиеся после удаления повторяющихся элементы дерева при постфиксном обходе: \n";
+    for (int i = 0; i < v.size(); i++) {
+        std::cout << v[i] << " ";
+    }
+    std::cout << "\n";
+
+    std::cout << "\nВремя удаления повторяющихся узлов (ДЕРЕВО  ): " << std::chrono::duration_cast<std::chrono::nanoseconds>(finish-start).count() << " наносекунд\n";
+
+    start = std::chrono::high_resolution_clock::now();
+    removeEqualitiesFromString(input);
+    finish = std::chrono::high_resolution_clock::now();
+    std::cout << "\nВремя удаления повторяющихся узлов (СТАНДАРТ): " << std::chrono::duration_cast<std::chrono::nanoseconds>(finish-start).count() << " наносекунд\n";
+
+
     return 0;
 }
 

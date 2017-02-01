@@ -1,0 +1,30 @@
+digraph G{
+forcelabels=true;
+0 [label="'l'" ,fillcolor="blue" ,style="filled"];
+2 [label="'l'" ,fillcolor="blue" ,style="filled"];
+3 [label="'k'" ,fillcolor="blue" ,style="filled"];
+4 [label="'e'" ,fillcolor="blue" ,style="filled"];
+6 [label="'c'"];
+9 [label="'b'"];
+8 [label="'e'" ,fillcolor="blue" ,style="filled"];
+12 [label="'e'" ,fillcolor="blue" ,style="filled"];
+5 [label="'k'" ,fillcolor="blue" ,style="filled"];
+7 [label="'h'"];
+1 [label="'o'"];
+10 [label="'u'"];
+11 [label="'r'"];
+13 [label="'q'"];
+0->2
+0->1
+2->3
+3->4
+4->6
+4->5
+6->9
+6->8
+8->12
+5->7
+1->10
+10->11
+11->13
+}
