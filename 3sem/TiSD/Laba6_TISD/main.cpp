@@ -42,13 +42,26 @@ int main() {
     for (int i = 0; i  < input.size(); i++) {
         tree.addNode(input[i]);
     }
+
+    vector<char> v = tree.LRCVector();
+    std::cout << "\nЭлементы дерева при постфиксном обходе: \n";
+    if (v.size() == 0) {
+        std::cout << "<Ни одного элемента>";
+    }
+    for (int i = 0; i < v.size(); i++) {
+        std::cout << v[i] << " ";
+    }
+
     tree.visualizeColorRepeating();
     auto start = std::chrono::high_resolution_clock::now();
     tree.removeDublicates();
     auto finish = std::chrono::high_resolution_clock::now();
 
-    vector<char> v = tree.LRCVector();
+    v = tree.LRCVector();
     std::cout << "\nОставшиеся после удаления повторяющихся элементы дерева при постфиксном обходе: \n";
+    if (v.size() == 0) {
+        std::cout << "<Ни одного элемента>";
+    }
     for (int i = 0; i < v.size(); i++) {
         std::cout << v[i] << " ";
     }

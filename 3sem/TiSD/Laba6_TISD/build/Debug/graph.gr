@@ -1,30 +1,304 @@
 digraph G{
 forcelabels=true;
-0 [label="'l'" ,fillcolor="blue" ,style="filled"];
-2 [label="'l'" ,fillcolor="blue" ,style="filled"];
-3 [label="'k'" ,fillcolor="blue" ,style="filled"];
+0 [label="'A'"];
+2 [label="' '" ,fillcolor="blue" ,style="filled"];
+7 [label="' '" ,fillcolor="blue" ,style="filled"];
+11 [label="' '" ,fillcolor="blue" ,style="filled"];
+14 [label="' '" ,fillcolor="blue" ,style="filled"];
+24 [label="' '" ,fillcolor="blue" ,style="filled"];
+27 [label="' '" ,fillcolor="blue" ,style="filled"];
+33 [label="' '" ,fillcolor="blue" ,style="filled"];
+38 [label="' '" ,fillcolor="blue" ,style="filled"];
+50 [label="' '" ,fillcolor="blue" ,style="filled"];
+58 [label="' '" ,fillcolor="blue" ,style="filled"];
+62 [label="' '" ,fillcolor="blue" ,style="filled"];
+73 [label="' '" ,fillcolor="blue" ,style="filled"];
+85 [label="' '" ,fillcolor="blue" ,style="filled"];
+96 [label="' '" ,fillcolor="blue" ,style="filled"];
+105 [label="' '" ,fillcolor="blue" ,style="filled"];
+111 [label="' '" ,fillcolor="blue" ,style="filled"];
+120 [label="' '" ,fillcolor="blue" ,style="filled"];
+125 [label="' '" ,fillcolor="blue" ,style="filled"];
+133 [label="' '" ,fillcolor="blue" ,style="filled"];
+136 [label="' '" ,fillcolor="blue" ,style="filled"];
+141 [label="' '" ,fillcolor="blue" ,style="filled"];
+1 [label="'t'" ,fillcolor="blue" ,style="filled"];
 4 [label="'e'" ,fillcolor="blue" ,style="filled"];
-6 [label="'c'"];
-9 [label="'b'"];
 8 [label="'e'" ,fillcolor="blue" ,style="filled"];
 12 [label="'e'" ,fillcolor="blue" ,style="filled"];
-5 [label="'k'" ,fillcolor="blue" ,style="filled"];
-7 [label="'h'"];
-1 [label="'o'"];
-10 [label="'u'"];
-11 [label="'r'"];
-13 [label="'q'"];
+15 [label="'a'" ,fillcolor="blue" ,style="filled"];
+20 [label="'a'" ,fillcolor="blue" ,style="filled"];
+65 [label="'a'" ,fillcolor="blue" ,style="filled"];
+76 [label="'a'" ,fillcolor="blue" ,style="filled"];
+92 [label="'a'" ,fillcolor="blue" ,style="filled"];
+106 [label="'a'" ,fillcolor="blue" ,style="filled"];
+139 [label="'a'" ,fillcolor="blue" ,style="filled"];
+149 [label="'a'" ,fillcolor="blue" ,style="filled"];
+16 [label="'c'" ,fillcolor="blue" ,style="filled"];
+17 [label="'c'" ,fillcolor="blue" ,style="filled"];
+53 [label="'c'" ,fillcolor="blue" ,style="filled"];
+63 [label="'b'"];
+112 [label="'c'" ,fillcolor="blue" ,style="filled"];
+25 [label="'e'" ,fillcolor="blue" ,style="filled"];
+35 [label="'d'" ,fillcolor="blue" ,style="filled"];
+39 [label="'d'" ,fillcolor="blue" ,style="filled"];
+51 [label="'d'" ,fillcolor="blue" ,style="filled"];
+67 [label="'d'" ,fillcolor="blue" ,style="filled"];
+97 [label="'d'" ,fillcolor="blue" ,style="filled"];
+126 [label="'d'" ,fillcolor="blue" ,style="filled"];
+77 [label="'e'" ,fillcolor="blue" ,style="filled"];
+79 [label="'e'" ,fillcolor="blue" ,style="filled"];
+98 [label="'e'" ,fillcolor="blue" ,style="filled"];
+100 [label="'e'" ,fillcolor="blue" ,style="filled"];
+110 [label="'e'" ,fillcolor="blue" ,style="filled"];
+131 [label="'e'" ,fillcolor="blue" ,style="filled"];
+134 [label="'e'" ,fillcolor="blue" ,style="filled"];
+145 [label="'e'" ,fillcolor="blue" ,style="filled"];
+5 [label="'r'" ,fillcolor="blue" ,style="filled"];
+6 [label="'o'" ,fillcolor="blue" ,style="filled"];
+9 [label="'o'" ,fillcolor="blue" ,style="filled"];
+21 [label="'m'" ,fillcolor="blue" ,style="filled"];
+28 [label="'i'" ,fillcolor="blue" ,style="filled"];
+36 [label="'i'" ,fillcolor="blue" ,style="filled"];
+40 [label="'i'" ,fillcolor="blue" ,style="filled"];
+41 [label="'g'"];
+43 [label="'i'" ,fillcolor="blue" ,style="filled"];
+46 [label="'i'" ,fillcolor="blue" ,style="filled"];
+54 [label="'i'" ,fillcolor="blue" ,style="filled"];
+61 [label="'i'" ,fillcolor="blue" ,style="filled"];
+68 [label="'i'" ,fillcolor="blue" ,style="filled"];
+70 [label="'i'" ,fillcolor="blue" ,style="filled"];
+71 [label="'i'" ,fillcolor="blue" ,style="filled"];
+82 [label="'i'" ,fillcolor="blue" ,style="filled"];
+102 [label="'i'" ,fillcolor="blue" ,style="filled"];
+104 [label="'i'" ,fillcolor="blue" ,style="filled"];
+119 [label="'i'" ,fillcolor="blue" ,style="filled"];
+148 [label="'i'" ,fillcolor="blue" ,style="filled"];
+47 [label="'m'" ,fillcolor="blue" ,style="filled"];
+55 [label="'m'" ,fillcolor="blue" ,style="filled"];
+64 [label="'l'" ,fillcolor="blue" ,style="filled"];
+88 [label="'l'" ,fillcolor="blue" ,style="filled"];
+99 [label="'l'" ,fillcolor="blue" ,style="filled"];
+128 [label="'l'" ,fillcolor="blue" ,style="filled"];
+144 [label="'l'" ,fillcolor="blue" ,style="filled"];
+84 [label="'m'" ,fillcolor="blue" ,style="filled"];
+95 [label="'m'" ,fillcolor="blue" ,style="filled"];
+142 [label="'m'" ,fillcolor="blue" ,style="filled"];
+32 [label="'o'" ,fillcolor="blue" ,style="filled"];
+34 [label="'o'" ,fillcolor="blue" ,style="filled"];
+37 [label="'o'" ,fillcolor="blue" ,style="filled"];
+42 [label="'n'" ,fillcolor="blue" ,style="filled"];
+66 [label="'n'" ,fillcolor="blue" ,style="filled"];
+80 [label="'n'" ,fillcolor="blue" ,style="filled"];
+101 [label="'n'" ,fillcolor="blue" ,style="filled"];
+48 [label="'o'" ,fillcolor="blue" ,style="filled"];
+87 [label="'o'" ,fillcolor="blue" ,style="filled"];
+113 [label="'o'" ,fillcolor="blue" ,style="filled"];
+123 [label="'o'" ,fillcolor="blue" ,style="filled"];
+127 [label="'o'" ,fillcolor="blue" ,style="filled"];
+129 [label="'o'" ,fillcolor="blue" ,style="filled"];
+143 [label="'o'" ,fillcolor="blue" ,style="filled"];
+59 [label="'q'" ,fillcolor="blue" ,style="filled"];
+74 [label="'p'" ,fillcolor="blue" ,style="filled"];
+90 [label="'p'" ,fillcolor="blue" ,style="filled"];
+117 [label="'p'" ,fillcolor="blue" ,style="filled"];
+108 [label="'q'" ,fillcolor="blue" ,style="filled"];
+121 [label="'q'" ,fillcolor="blue" ,style="filled"];
+137 [label="'q'" ,fillcolor="blue" ,style="filled"];
+75 [label="'r'" ,fillcolor="blue" ,style="filled"];
+114 [label="'r'" ,fillcolor="blue" ,style="filled"];
+115 [label="'r'" ,fillcolor="blue" ,style="filled"];
+130 [label="'r'" ,fillcolor="blue" ,style="filled"];
+10 [label="'s'" ,fillcolor="blue" ,style="filled"];
+19 [label="'s'" ,fillcolor="blue" ,style="filled"];
+23 [label="'s'" ,fillcolor="blue" ,style="filled"];
+30 [label="'s'" ,fillcolor="blue" ,style="filled"];
+44 [label="'s'" ,fillcolor="blue" ,style="filled"];
+45 [label="'s'" ,fillcolor="blue" ,style="filled"];
+49 [label="'s'" ,fillcolor="blue" ,style="filled"];
+57 [label="'s'" ,fillcolor="blue" ,style="filled"];
+72 [label="'s'" ,fillcolor="blue" ,style="filled"];
+78 [label="'s'" ,fillcolor="blue" ,style="filled"];
+124 [label="'s'" ,fillcolor="blue" ,style="filled"];
+132 [label="'s'" ,fillcolor="blue" ,style="filled"];
+140 [label="'s'" ,fillcolor="blue" ,style="filled"];
+146 [label="'s'" ,fillcolor="blue" ,style="filled"];
+150 [label="'s'" ,fillcolor="blue" ,style="filled"];
+13 [label="'t'" ,fillcolor="blue" ,style="filled"];
+26 [label="'t'" ,fillcolor="blue" ,style="filled"];
+31 [label="'t'" ,fillcolor="blue" ,style="filled"];
+69 [label="'t'" ,fillcolor="blue" ,style="filled"];
+81 [label="'t'" ,fillcolor="blue" ,style="filled"];
+91 [label="'t'" ,fillcolor="blue" ,style="filled"];
+93 [label="'t'" ,fillcolor="blue" ,style="filled"];
+103 [label="'t'" ,fillcolor="blue" ,style="filled"];
+107 [label="'t'" ,fillcolor="blue" ,style="filled"];
+118 [label="'t'" ,fillcolor="blue" ,style="filled"];
+135 [label="'t'" ,fillcolor="blue" ,style="filled"];
+147 [label="'t'" ,fillcolor="blue" ,style="filled"];
+3 [label="'v'" ,fillcolor="blue" ,style="filled"];
+18 [label="'u'" ,fillcolor="blue" ,style="filled"];
+22 [label="'u'" ,fillcolor="blue" ,style="filled"];
+29 [label="'u'" ,fillcolor="blue" ,style="filled"];
+52 [label="'u'" ,fillcolor="blue" ,style="filled"];
+56 [label="'u'" ,fillcolor="blue" ,style="filled"];
+60 [label="'u'" ,fillcolor="blue" ,style="filled"];
+83 [label="'u'" ,fillcolor="blue" ,style="filled"];
+89 [label="'u'" ,fillcolor="blue" ,style="filled"];
+94 [label="'u'" ,fillcolor="blue" ,style="filled"];
+109 [label="'u'" ,fillcolor="blue" ,style="filled"];
+116 [label="'u'" ,fillcolor="blue" ,style="filled"];
+122 [label="'u'" ,fillcolor="blue" ,style="filled"];
+138 [label="'u'" ,fillcolor="blue" ,style="filled"];
+86 [label="'v'" ,fillcolor="blue" ,style="filled"];
 0->2
 0->1
-2->3
-3->4
-4->6
+2->7
+7->11
+11->14
+14->24
+24->27
+27->33
+33->38
+38->50
+50->58
+58->62
+62->73
+73->85
+85->96
+96->105
+105->111
+111->120
+120->125
+125->133
+133->136
+136->141
+1->4
+1->3
+4->8
 4->5
-6->9
-6->8
 8->12
-5->7
-1->10
-10->11
-11->13
+12->15
+15->20
+15->16
+20->65
+65->76
+76->92
+92->106
+106->139
+139->149
+16->17
+16->25
+17->53
+53->63
+63->112
+25->35
+35->39
+35->77
+39->51
+51->67
+67->97
+97->126
+77->79
+79->98
+98->100
+100->110
+110->131
+131->134
+134->145
+5->6
+5->10
+6->9
+6->59
+9->21
+21->28
+21->32
+28->36
+28->47
+36->40
+40->41
+41->43
+43->46
+46->54
+54->61
+61->68
+68->70
+70->71
+71->82
+82->102
+102->104
+104->119
+119->148
+47->55
+55->64
+64->88
+64->84
+88->99
+99->128
+128->144
+84->95
+95->142
+32->34
+34->37
+37->42
+42->66
+42->48
+66->80
+80->101
+48->87
+87->113
+113->123
+123->127
+127->129
+129->143
+59->74
+59->75
+74->90
+74->108
+90->117
+108->121
+121->137
+75->114
+114->115
+115->130
+10->19
+10->13
+19->23
+23->30
+30->44
+44->45
+45->49
+49->57
+57->72
+72->78
+78->124
+124->132
+132->140
+140->146
+146->150
+13->26
+26->31
+31->69
+69->81
+81->91
+91->93
+93->103
+103->107
+107->118
+118->135
+135->147
+3->18
+18->22
+18->86
+22->29
+29->52
+52->56
+56->60
+60->83
+83->89
+89->94
+94->109
+109->116
+116->122
+122->138
 }
