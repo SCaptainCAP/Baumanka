@@ -57,6 +57,8 @@ public:
     void visualizeColorRepeating(bool full = false, string filename = "graph.gr", string pic = "graph.png");
 
     void removeDublicates();
+
+    unsigned long memory();
 };
 
 template<class T>
@@ -328,6 +330,12 @@ Node<T>* BinaryTree<T>::remove_recursive(Node<T> *node, T data){
         }
     }
     return node;
+}
+
+template<class T>
+unsigned long BinaryTree<T>::memory() {
+    vector<T> v = AcrossWalkVector();
+    return v.size() * (sizeof(Node<T>) - sizeof(unsigned int));
 }
 
 #endif

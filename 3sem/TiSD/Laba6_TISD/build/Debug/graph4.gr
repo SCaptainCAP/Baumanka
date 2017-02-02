@@ -1,0 +1,6 @@
+digraph G{
+forcelabels=true;
+0 [label="'b'"];
+3 [label="'c'"];
+0->3
+}

@@ -1,0 +1,12 @@
+digraph G{
+forcelabels=true;
+0 [label="'A'"];
+296 [label="'E'"];
+354 [label="'N'"];
+689 [label="'I'"];
+536 [label="'T'"];
+0->296
+296->354
+354->689
+354->536
+}

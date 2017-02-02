@@ -2,6 +2,7 @@
 #include <string>
 #include <chrono>
 #include <vector>
+#include <stdlib.h>
 #include "MatrixRare.h"
 #include "Matrix.h"
 
