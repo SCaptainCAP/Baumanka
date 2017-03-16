@@ -1,18 +1,11 @@
-def print_table(Xarr, Yarr):
+def printTable(Xarr, Yarr):
     print("\nТаблица:")
     print("---------------------")
-    print('    x     |     y    ')
+    print('    x    |     y    ')
     print("---------------------")
     for i in range(len(Xarr)):
         print('{0:<7f} | {1:<7f}'.format(Xarr[i], Yarr[i]))
     print("---------------------")
-
-
-def correct_input(A):
-    for i in range(len(A)):
-        if A.count(A[i]) > 1:
-            return 0
-    return 1
 
 
 def find_position(x, n, mas):
@@ -25,9 +18,9 @@ def find_position(x, n, mas):
     else:
         i = 0
         len_arr = len(mas)
-        while (i < len_arr - 1):
-            if ((mas[i] <= x) & (mas[i + 1] >= x)):
-                if (i + n > len_arr - 1):
+        while i < len_arr - 1:
+            if (mas[i] <= x) & (mas[i + 1] >= x):
+                if i + n > len_arr - 1:
                     return len_arr - n - 1, len_arr - 1
                 else:
                     return i, i + n
@@ -55,12 +48,12 @@ def interpolation(arg, power, Xarr, Yarr):
     else:
         left, right = find_position(arg, power, Xarr)
         stepper = left
-        Sum = Yarr[stepper]
-        temp = arg - Xarr[stepper]
+        sum = Yarr[stepper]
+        Xrazn = arg - Xarr[stepper]
         delta = 2
         while stepper != right:
-            Sum += temp * koef(Xarr[left:left + delta], Yarr[left:left + delta], 0)
+            sum += Xrazn * koef(Xarr[left:left + delta], Yarr[left:left + delta], 0)
             stepper += 1
-            temp *= arg - Xarr[stepper]
+            Xrazn *= arg - Xarr[stepper]
             delta += 1
-        return Sum
+        return sum

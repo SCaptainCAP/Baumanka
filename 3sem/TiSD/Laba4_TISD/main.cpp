@@ -47,6 +47,8 @@ void work(int n, int interval, interval_time t1, interval_time t2, interval_time
     //Реальное время работы самой функции (старт)
     time_t rtime1 = clock();
 
+    int second_loosers = 0;
+
     while(req_out1 < n) {
 
         if(que1.is_full() or que2.is_full()) {
@@ -60,38 +62,29 @@ void work(int n, int interval, interval_time t1, interval_time t2, interval_time
         if (tr2 == 0.) {
             tr2 = get_time(t2);
         }
-
+        //cout << tr_obr << endl;
         if(tr_obr == 0.) {
-            //Эмуляция работы каждой итерации ОА 
-            switch(type) {
-                case 0:
-                case 1:
-                    if (!que1.Empty_CQueue()) {
-                        type = 1;
-                        tr_obr = get_time(t3);
-                        //req_out++;
-                        que1.PopFront();
-                    }
-                    else if(!que2.Empty_CQueue()) {
-                            type = 2;
-                            tr_obr = get_time(t4);
-                            que2.PopFront();
-                    }
-                    break;
-                case 2:
-                    if (!que2.Empty_CQueue()) {
-                        type = 2;
-                        tr_obr = get_time(t4);
-                        que2.PopFront();
-                    } else if (!que1.Empty_CQueue()) {
-                        type = 1;
-                        tr_obr = get_time(t3);
-                        //req_out++;
-                        que1.PopFront();
-                    }
-                    break;
+//            //Эмуляция работы каждой итерации ОА
+            if (!que1.Empty_CQueue()) {
+                tr_obr = get_time(t3);
+                type = 1;
+                que1.PopFront();
+            }
+            else if(!que2.Empty_CQueue()) {
+                tr_obr = get_time(t4);
+                type = 2;
+                que2.PopFront();
+            }
+        } else {
+            if (type == 2 && !que1.Empty_CQueue()) {
+                que2.PushBack(request());
+                tr_obr = 0.;
+                second_loosers++;
+                continue;
             }
         }
+
+
 
         double tmin = 0.;
 
@@ -101,15 +94,6 @@ void work(int n, int interval, interval_time t1, interval_time t2, interval_time
         }
         else {
             tmin = min(tr1, min(tr2, tr_obr));
-        }
-        //Добавление заявок
-        if(tmin == tr1) {
-            que1.PushBack(request());
-            req_in1++;
-        }
-        if (tmin == tr2) {
-            que2.PushBack(request());
-            req_in2++;
         }
         //Обработка заявок
         if(tmin == tr_obr ) {
@@ -121,6 +105,18 @@ void work(int n, int interval, interval_time t1, interval_time t2, interval_time
                 req_out2++;
             }
         }
+        if (req_out1 == n)
+            break;
+        //Добавление заявок
+        if(tmin == tr1) {
+            que1.PushBack(request());
+            req_in1++;
+        }
+        if (tmin == tr2) {
+            que2.PushBack(request());
+            req_in2++;
+        }
+
         tr1 -= tmin;
         tr2 -= tmin;
 
@@ -143,10 +139,13 @@ void work(int n, int interval, interval_time t1, interval_time t2, interval_time
     cout << "Общее время моделирования " << time << endl;
     cout << "Кол-во вошедших и вышедших (1 тип) " << req_in1 << " " << req_out1 << endl;
     cout << "Кол-во вошедших и вышедших (2 тип) " << req_in2 << " " << req_out2 << endl;
+    cout << "Кол-во отклоненных заявок второго типа " << second_loosers << endl;
     cout << "Время работы " << real_time << endl;
     if(flag == 1) {
         cout << "Незадействованные адреса эл-тов:\n";
+        cout << "1 очередь:\n";
         que1.show_adr();
+        cout << "2 очередь:\n";
         que2.show_adr();
     }
 }
@@ -204,14 +203,13 @@ int main()
                 work<CQueue_array>(n, interval, t1, t2, t3, t4, 0);
                 break;
             case 2:
-                cout << "Выводить информацию о фрагментации памяти? 1 - yes" << endl;
+                cout << "Выводить информацию о фрагментации памяти? 1 - да" << endl;
                 cin >> flag;
                 if(flag != 1)
                     flag = 0;
                 work<CQueue_list>(n, interval, t1, t2, t3, t4, flag);
                 break;
             case 3:
-                cout << "До свиданья)" << endl;
                 return 0;
             default:
                 cout << "Команда не найдена";
