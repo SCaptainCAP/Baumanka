@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.layout.VBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <children>
+        <SplitPane fx:id="splitPane" dividerPositions="0.7" prefHeight="600.0" prefWidth="1000.0">
+            <items>
+                <AnchorPane minHeight="600" minWidth="700" prefHeight="700" prefWidth="700.0">
+                    <children>
+                        <Canvas fx:id="canvas" height="600" width="700"/>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="600" prefWidth="300">
+                    <children>
+                        <VBox prefHeight="600.0" prefWidth="300.0">
+                            <HBox prefHeight="100.0" prefWidth="300.0"/>
+
+                            <ListView fx:id="listView" prefHeight="500" prefWidth="300.0"/>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

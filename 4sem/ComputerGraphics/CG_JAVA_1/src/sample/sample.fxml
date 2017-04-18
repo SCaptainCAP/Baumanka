@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.Pane?>
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="700" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.112"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <SplitPane fx:id="splitPane" dividerPositions="0.7" prefHeight="700.0" prefWidth="1000.0">
+            <items>
+                <AnchorPane minHeight="600" minWidth="700" prefHeight="700" prefWidth="700.0">
+                    <children>
+                        <Canvas fx:id="canvas" height="700" width="700"/>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="700" prefWidth="300">
+
+                    <VBox prefHeight="700.0" prefWidth="300.0">
+
+                        <VBox prefHeight="10.0" prefWidth="300.0">
+                            <padding>
+                                <Insets left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                            <Label text="Новая точка"/>
+                        </VBox>
+
+                        <HBox prefHeight="40.0" prefWidth="300.0" spacing="10">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                            <TextField prefWidth="85" promptText="X" fx:id="xField">
+                            </TextField>
+                            <TextField fx:id="yField" prefWidth="85" promptText="Y">
+                            </TextField>
+                            <Button fx:id="buttonAdd" text="Добавить"/>
+                        </HBox>
+
+                        <VBox prefHeight="10.0" prefWidth="300.0">
+                            <padding>
+                                <Insets left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                            <Label text="Режим масштабирования"/>
+                        </VBox>
+
+                        <HBox prefHeight="40.0" prefWidth="300.0" spacing="10">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                            <RadioButton fx:id="radioAuto" mnemonicParsing="false" selected="true"
+                                         text="Автоматический"/>
+                            <RadioButton fx:id="radioManual" mnemonicParsing="false" text="Ручной"/>
+                        </HBox>
+                        <HBox prefHeight="40.0" prefWidth="300.0" spacing="10">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                            <VBox>
+                                <VBox prefHeight="10.0" prefWidth="300.0">
+                                    <padding>
+                                        <Insets bottom="10.0"/>
+                                    </padding>
+                                    <Label text="X камеры"/>
+                                </VBox>
+                                <TextField fx:id="xCam" prefWidth="80" promptText="X камеры" text="0.00"
+                                           disable="true"/>
+                            </VBox>
+                            <VBox>
+                                <VBox prefHeight="10.0" prefWidth="300.0">
+                                    <padding>
+                                        <Insets bottom="10.0"/>
+                                    </padding>
+                                    <Label text="Y камеры"/>
+                                </VBox>
+                                <TextField fx:id="yCam" prefWidth="80" promptText="Y камеры" text="0.00"
+                                           disable="true"/>
+                            </VBox>
+                            <VBox>
+                                <VBox prefHeight="10.0" prefWidth="300.0">
+                                    <padding>
+                                        <Insets bottom="10.0"/>
+                                    </padding>
+                                    <Label text="Zoom"/>
+                                </VBox>
+                                <TextField fx:id="zoomCam" prefWidth="80" promptText="Zoom" text="1.00" disable="true"/>
+                            </VBox>
+                        </HBox>
+                        <VBox>
+                            <padding>
+                                <Insets bottom="10"/>
+                            </padding>
+                            <Button fx:id="buttonCam" prefHeight="40" prefWidth="300.0" text="Обновить камеру"/>
+                        </VBox>
+                        <Button fx:id="buttonDeleteAll" prefHeight="40" prefWidth="300.0" text="Удалить все точки"/>
+                        <ListView fx:id="listView" prefHeight="250" prefWidth="300.0"/>
+                        <VBox spacing="5">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                            </padding>
+                            <HBox>
+                                <Label text="Точка A:" prefWidth="100.0"/>
+                                <Label text="Нет ответа" fx:id="aAns"/>
+                            </HBox>
+                            <HBox>
+                                <Label text="Точка B:" prefWidth="100.0"/>
+                                <Label text="Нет ответа" fx:id="bAns"/>
+                            </HBox>
+                            <HBox>
+                                <Label text="Точка C:" prefWidth="100.0"/>
+                                <Label text="Нет ответа" fx:id="cAns"/>
+                            </HBox>
+                            <HBox>
+                                <Label text="Точка пересечения высот:" prefWidth="100.0" wrapText="true"/>
+                                <Label text="Нет ответа" fx:id="hAns"/>
+                            </HBox>
+                            <HBox>
+                                <Label text="Угол:" prefWidth="100.0"/>
+                                <Label text="Нет ответа" fx:id="angleAns"/>
+                            </HBox>
+                        </VBox>
+                    </VBox>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>
